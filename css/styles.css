@@ -1,0 +1,177 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    border: 0;
+    list-style: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'hanken_groteskregular';
+}
+
+@font-face {
+    font-family: 'hanken_groteskregular';
+    src: url('../fonts/hankengrotesk-variablefont_wght-webfont.woff2') format('woff2'),
+         url('../fonts/hankengrotesk-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.container {
+    width: 614px;
+    height: 426px;
+    display: flex;
+    background-color: #fff;
+    border-radius: 28px;
+    box-shadow: 0 10px 20px #00000025;
+}
+
+.container h3 {
+    font-size: 22px;
+}
+
+.container .side {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .side:first-child {
+    border-radius: 28px;
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color: #fff;
+    padding-top: 32px;
+}
+
+.container .side:last-child {
+padding: 0 30px;
+padding-top: 30px;
+}
+
+.container .circle {
+    width: 166px;
+    height: 166px;
+    border-radius: 100%;
+    background-image: linear-gradient(#00000025, #00000000);
+    background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px auto;
+    
+}
+
+.container .circle h1 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.container .circle p {
+    font-size: 14px;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.5)
+}
+
+.container .side:first-child p:first-of-type {
+    color: hsla(0, 0%, 100%, 0.75)
+}
+
+.container .side:first-child p:last-of-type {
+    padding: 0 50px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.container .side:last-child ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 30px;
+}
+
+.container .side:last-child ul li {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    padding: 0 14px;
+}
+
+.container .side:last-child ul li span {
+    color: #303b5975
+}
+
+.container .side:last-child ul li span b{
+    color: #303b59
+}
+
+.container .side:last-child ul li div{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-weight: 600;
+}
+
+.container .side:last-child ul li:nth-child(1) div span {
+    color:hsl(0, 100%, 67%)
+}
+
+.container .side:last-child ul li:nth-child(2) div span {
+    color: hsl(39, 100%, 56%)
+}
+
+.container .side:last-child ul li:nth-child(3) div span {
+    color: hsl(166, 100%, 37%)
+}
+
+.container .side:last-child ul li:nth-child(4) div span {
+    color: hsl(234, 85%, 45%)
+}
+
+.container .side:last-child ul li:nth-child(1){
+    background-color: #fff6f5;
+}
+
+.container .side:last-child ul li:nth-child(2){
+    background-color: #fffbf2;
+}
+
+.container .side:last-child ul li:nth-child(3){
+    background-color: #f2fbfa;
+}
+
+.container .side:last-child ul li:nth-child(4){
+    background-color: #f3f3fd;
+}
+
+.container .side:last-child a {
+    width: 100%;
+    line-height: 50px;
+    color: #fff;
+    border-radius: 25px;
+    display: block;
+    background-color: #303b59;
+    transition-duration: 300ms;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 17px;
+}
+
+.container .side:last-child a:hover {
+    background-color: #312ceb
+}
